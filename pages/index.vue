@@ -183,7 +183,8 @@ export default {
       display: none;
     }
     .sub-title {
-      margin-top: 200px;
+      margin-top: 180px;
+      font-size: 16px;
     }
   }
   .idiom {
