@@ -1,9 +1,10 @@
 <template>
   <div class="container">
     <a-row>
-      <a-col :span="9" class="color-overlay"> </a-col>
+      <a-col :span="8" class="color-overlay"> </a-col>
 
-      <a-col :span="15" class="block-information" :style="styleObject">
+      <a-col :span="16" class="block-information" :style="styleObject">
+        <IntroduceCard />
         <h6 class="title">Hello</h6>
         <p class="sub-title" align="justify">
           My short term goals are to improve my knowledge and skills such as
@@ -14,7 +15,6 @@
         </p>
 
         <div class="overlay" />
-        <IntroduceCard />
       </a-col>
       <p class="idiom">{{ currentIdiom }}</p>
     </a-row>
@@ -65,6 +65,7 @@ export default {
         animation: 'appearlImage 1s ease-out',
         transition: '2s',
         height: '100vh',
+        objectFit: 'cover',
       }
     },
   },
@@ -109,7 +110,7 @@ export default {
 
     .sub-title {
       font-size: 25px;
-      width: 500px;
+      max-width: 500px;
       z-index: 2;
       font-weight: 300;
     }
@@ -150,6 +151,43 @@ export default {
 @keyframes appear {
   0% {
     opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .color-overlay {
+    display: none;
+  }
+
+  .ant-row .block-information {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    .sub-title {
+      max-width: 100%;
+      font-size: 20px;
+    }
+    .title {
+      margin-top: 100px;
+      font-size: 80px;
+    }
+
+    .overlay {
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .ant-row .block-information {
+    .title {
+      display: none;
+    }
+    .sub-title {
+      margin-top: 200px;
+    }
+  }
+  .idiom {
+    display: none;
   }
 }
 </style>

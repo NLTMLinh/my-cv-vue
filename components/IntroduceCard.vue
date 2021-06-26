@@ -61,6 +61,7 @@
   padding: 20px;
   box-shadow: 0 8px 8px 0 rgba(103, 151, 255, 0.11),
     0 12px 18px 0 rgba(103, 151, 255, 0.11);
+  z-index: 2;
 
   .ant-avatar {
     width: 220px;
@@ -117,6 +118,16 @@
 @keyframes appear {
   0% {
     opacity: 0;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .introduce-card {
+    padding: 10px;
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 335px;
   }
 }
 </style>
