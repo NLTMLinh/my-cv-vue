@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'My Linh',
+    title: 'Linh Nguyen',
     htmlAttrs: {
       lang: 'en',
     },
@@ -36,7 +36,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['~/assets/antd/main.less'],
+  css: ['~/assets/antd/main.less', '~/assets/less/main.less'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: ['@/plugins/ant-design-vue'],

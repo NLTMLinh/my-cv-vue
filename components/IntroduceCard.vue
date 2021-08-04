@@ -53,7 +53,7 @@
 .introduce-card {
   animation: 1s appear;
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: -200px;
   background: @gold-3;
   border: 10px solid @gold-3;
@@ -62,6 +62,7 @@
   box-shadow: 0 8px 8px 0 rgba(103, 151, 255, 0.11),
     0 12px 18px 0 rgba(103, 151, 255, 0.11);
   z-index: 2;
+  transform: translate(0, -40%);
 
   .ant-avatar {
     width: 220px;
